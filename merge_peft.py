@@ -42,7 +42,7 @@ def main():
         low_cpu_mem_usage=True,
         return_dict=True,
         torch_dtype=torch.float16,
-        device_map="cpu",
+        device_map="cuda",
         # local_files_only=True
     )
     print(f"Running merge_and_unload")
